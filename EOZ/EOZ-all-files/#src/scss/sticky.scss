@@ -1,0 +1,16 @@
+.sticky {
+    box-shadow: $box-shadow;
+    z-index: 20;
+    .nav-top {
+        background: #553DB4;
+    }
+    .nav-main{
+        background: #fff;
+        a {
+            color: $text_color;
+            &.active {
+                color: #98A0A9;
+            }
+        }
+    }
+}

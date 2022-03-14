@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>М.ТУРСХАНОВ</h1>
+            <h4>Frontend разработчик</h4>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#services">Навыки</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <section id="about" class="p-150">
+        <div class="container">
+            <div class="about_area">
+                <div class="img-area">
+                    <img src="./img/8.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>Hi!I am Muhammadyorkhon</h2>
+                    <p>Привет. Я Мухаммадёрхон из Шымкента. Занимаюсь веб-разработкой больше года. Улыбчивый, общительный, всегда готов к чему-то новому. 
+                        Делаю frontend части сайтов и интернет магазинов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="p-150">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="services_items">
+                <div class="single-text">
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Уверенное знание то что нужно всем веб-разработчикам</p>
+                </div>
+                <div class="single-text">
+                    <h3>JavaScript</h3>
+                    <p>Хорошое знание отличного инструмента для взаимодейсвия с пользователями</p>
+                </div>
+                <div class="single-text">
+                    <h3>Vue JS</h3>
+                    <p>Отличный фреймворк языка JS для фронтенда</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="p-150">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="port_items">
+                <div class="port_item">
+                    <img src="./img/port1.png" alt="">
+                </div>
+                <div class="port_item">
+                    <img src="./img/port2.png" alt="">
+                </div>
+                <div class="port_item">
+                    <img src="./img/port3.png" alt="">
+                </div>
+                <div class="port_item">
+                    <img src="./img/port4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="p-150">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="form-area">
+                <div class="items">
+                    <p class="text">Мой номер:</p>
+                    <p class="val">+7 (707) 502 71 75</p>
+                </div>
+                <div class="items">
+                    <p class="text">Моя почта:</p>
+                    <p class="val">Muxammad_909@mail.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyriht DIOR</p>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <script >
+        $('a[href^="#"]').click(function(event){
+            var id = $(this).attr("href");
+            var target = $(id).offset().top;
+            $('html,body').animate({scrollTop:target},500);
+            event.preventDefault();
+        });
+        var offset = $('nav').offset().top;
+        $(window).scroll(function(){
+            if($(this).scrollTop() >= offset){
+                $('nav').addClass('fixedNav');
+                $('html').addClass('cusMargin');
+            } else{
+                $('nav').removeClass('fixedNav');
+                $('html').removeClass('cusMargin');
+            }
+        });
+    </script>
+</body>
+</html>

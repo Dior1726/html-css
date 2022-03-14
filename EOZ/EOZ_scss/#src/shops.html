@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper shops-page">
+        <header class="header">
+            <div class="main-header ">
+                <div class="mobile-logo">
+                    <a href="#"><img src="./img/icons/main_logo.svg" alt=""></a>
+                </div>
+                <div class="header-area">
+                    <div class="nav-top">
+                        <div class="nav-top__left">
+                            <ul>
+                                <li>
+                                    <a href="#">qaz</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">rus</a>
+                                </li>
+                                <li>
+                                    <a href="#">eng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-top__right">
+                            <ul>
+                                <li><a href="#"><img src="./img/icons/ytube.svg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/icons/qazbot.svg" alt=""></a></li>
+                                <li>
+                                    <a href="#">Вход</a> &nbsp;<span>/</span>&nbsp;
+                                    <a href="#">Регистрация</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="contact__us">Обратная связь</a>
+                        </div>
+                    </div>
+                    <div class="nav-main">
+                        <ul class="main-width">
+                            <li class="logo"><a href="index.html"><img src="./img/icons/main_logo.svg" alt=""></a></li>
+                            <li><a href="shops.html" class="active">Закупки</a></li>
+                            <li><a href="reestr.html">Реестр</a></li>
+                            <li><a href="packages.html" >Пакеты</a></li>
+                            <li><a href="about_portal.html" >О портале</a></li>
+                            <li><a href="inform.html">Информация</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-width">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-2">
+                        <div class="left-side">
+                            <ul>
+                                <li><a href="#" class="active">Планы закупок</a></li>
+                                <li><a href="#" >Объявления</a></li>
+                                <li><a href="#" >Лоты</a></li>
+                                <li><a href="#" >Договоры</a></li>
+                                <li><a href="#" >Избранное</a></li>
+                                <li><a href="#" >Аналитика</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10">
+                        <div class="right-side">
+                            <h2>Поиск закупок</h2>
+                            <form class="seach__area ">
+                                <div class="search__block-one">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Поиск в названии ">
+                                    <button type="submit" class="btn ">Искать</button>
+                                </div>
+                                <div class="search__block-two">
+                                    <div>
+                                        <input type="checkbox" name="" id="check1">
+                                        <label for="check1">Искать в моих ТРУ</label>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="search-hide">Расширенный поиск &nbsp; <img class="arrowdown" src="./img/icons/arrowDown.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="search__block-hide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8">
+                                            <input type="text" class="form-control" placeholder="Слова исключения">
+                                        </div>
+                                        <div class="col-12 col-lg-4 block__flex">
+                                            <input type="text" class="form-control" placeholder="Цена от (тг.)">
+                                            <input type="text" class="form-control" placeholder="Цена до (тг.)">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8">
+                                            <select name="" class="form-control" id="">
+                                                <option value="">Метод закупки</option>
+                                                <option value="">Аукцион</option>
+                                                <option value="">Конкурс / Тендер</option>
+                                                <option value="">Государственный социальный заказ</option>
+                                                <option value="">Запрос ценовых предложений</option>
+                                                <option value="">Из одного источника</option>
+                                                <option value="">Прочее</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <select name="" class="form-control" id="">
+                                                <option value="">Статус</option>
+                                                <option value="">Проект договора</option>
+                                                <option value="">Передан</option>
+                                                <option value="">Закупка состояласт</option>
+                                                <option value="">Договор действует</option>
+                                                <option value="">Договор изменен</option>
+                                                <option value="">Опубликован</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8 block__flex">
+                                            <select name="" class="form-control mr-2" id="">
+                                                <option value="">Дата закупки</option>
+                                                <option value="">Январь</option>
+                                                <option value="">Февраль</option>
+                                                <option value="">Март</option>
+                                                <option value="">Апрель</option>
+                                                <option value="">Май</option>
+                                                <option value="">Июнь</option>
+                                                <option value="">Июль</option>
+                                                <option value="">Август</option>
+                                                <option value="">Сентябрь</option>
+                                                <option value="">Октябрь</option>
+                                                <option value="">Ноябрь</option>
+                                                <option value="">Декабрь</option>
+                                            </select>
+                                            <select name="" class="form-control" id="">
+                                                <option value="">Закупочная площадка</option>
+                                                <option value="">Гос закупки</option>
+                                                <option value="">КазАгро</option>
+                                                <option value="">Байтерек</option>
+                                                <option value="">СКК</option>
+                                                <option value="">NADLoC</option>
+                                                <option value="">MP.KZ</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div type="text" class="form-control adress__btn" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <img src="./img/icons/gps.svg" alt="">Выбрать место поставки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8 block__flex">
+                                            <input type="text" class="form-control mr-2"  placeholder="Заказчик">
+                                            <input type="text" class="form-control"  placeholder="БИН">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <input type="text" class="form-control" placeholder="Код ЕНС ТРУ">
+                                        </div>
+                                    </div>
+                                    <div class="search__block-two">
+                                        <div>
+                                            <input type="checkbox" name="" checked id="check2">
+                                            <label for="check2" style="font-size: 16px;">Организации инвалидов</label>
+                                        </div>
+                                        <div>
+                                            <button type="reset" class="btn btn__reset">Очистить фильтр</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="table-area">
+                                <div class="paginator-area">
+                                    <div class="paginator">
+                                        <ul class="pagination">
+                                            <li class="page-item page-item__bg"><a class="page-link" href="#"><img src="./img/icons/pagonatorleft.svg" alt=""></a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                            <li class="page-item page-item__bg"><a class="page-link" href="#"><img src="./img/icons/paginatorright.svg" alt=""></a></li>
+                                          </ul>
+                                    </div>
+                                    <div class="sort-area">
+                                        <p>Сортировать по</p>
+                                        <select name="" class="form-control" id="">
+                                            <option value="">Наименовнованию</option>
+                                            <option value="">Сумма</option>
+                                            <option value="">Дата</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="table__block table-responsive">
+                                    <table class="table table-hover  table-borderless">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Наименование</th>
+                                            <th scope="col">Площадка</th>
+                                            <th scope="col">Сумма лота</th>
+                                            <th scope="col">Месяц закупок</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p></th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Сейф <p>aa</p></th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p></th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>1000</td>
+                                            <td>Январь</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p></th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                          </tr>
+                                        <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p>
+                                            </th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p>
+                                            </th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Полимеры винилхлорида или олефинов галогенированных прочих в первичных формах <p>aa</p>
+                                            </th>
+                                            <td><a href="#">Байтерек</a></td>
+                                            <td>15000</td>
+                                            <td>Январь</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="paginator-area">
+                                    <div class="paginator">
+                                        <ul class="pagination">
+                                            <li class="page-item page-item__bg"><a class="page-link" href="#"><img src="./img/icons/pagonatorleft.svg"
+                                                        alt=""></a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                            <li class="page-item page-item__bg"><a class="page-link" href="#"><img src="./img/icons/paginatorright.svg"
+                                                        alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="quantity__text">
+                                        <p>Количество записей: 2030</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="shops-page__footer">
+            @@include("_tFooter.html")
+        </div>
+        @@include("_footer.html")
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

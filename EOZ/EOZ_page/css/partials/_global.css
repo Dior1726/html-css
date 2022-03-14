@@ -1,0 +1,11 @@
+.title-text{
+    font: normal normal 36px/36px var(--ubuntu);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.main-width{
+    max-width: 1290px;
+    width: 100%;
+}
